@@ -179,11 +179,11 @@ src="https://www.facebook.com/tr?id=4680458672211347&ev=PageView&noscript=1"
 /* ===== EDIT THESE BEFORE LAUNCH ===== */
 const CONFIG = {
   checkoutUrl: "https://selar.com/681j17d282",  // Selar checkout link
-  now:   "₦7,500",            // today's price shown in headlines
-  old:   "₦20,000",           // crossed-out regular price
-  ng:    "Nigeria: ₦7,500",
-  gh:    "Ghana: GH₵ 60",
-  cm:    "Cameroon: 3,000 FCFA",
+  now:   "₦5,000",            // today's price shown in headlines
+  old:   "₦10,000",           // crossed-out regular price
+  ng:    "Nigeria: ₦5,000",
+  gh:    "Ghana: GH₵ 40",
+  cm:    "Cameroon: 2,595 FCFA",
   bonus1:"₦10,000",
   bonus2:"₦7,000",
   bonusTotal:"₦17,000",
@@ -213,7 +213,7 @@ document.querySelectorAll(".js-order").forEach(a => {
   a.addEventListener("click", () => {
     if (window.fbq) fbq("track", "InitiateCheckout", {
       content_name: "The Japa Relocation Playbook 2027",
-      value: 7500, currency: "NGN"
+      value: 5000, currency: "NGN"
     });
   });
 });
